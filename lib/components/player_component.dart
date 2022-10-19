@@ -6,7 +6,7 @@ class PlayerComponent extends SpriteComponent with HasGameRef {
   @override
   Future<void> onLoad() async {
     super.onLoad();
-    sprite = await gameRef.loadSprite('idle.png');
+    sprite = await gameRef.loadSprite('assets/images/bird.png');
     position = gameRef.size / 2;
   }
 }
